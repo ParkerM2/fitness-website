@@ -1,0 +1,32 @@
+.nav-colored { 
+    background-color:#000; 
+    margin-top: 12px;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    z-index: 999;
+ }
+.nav-transparent { 
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: transparent;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+nav a {
+    font: 1.2em/1em sans-serif;
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+

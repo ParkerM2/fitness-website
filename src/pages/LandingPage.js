@@ -4,12 +4,14 @@ import ROUTES from '../app/routes';
 import '../css/landingpage.css';
 import aboutImage from '../images/about.jpg';
 import services from '../data/services';
+import Navbar from '../components/LandingPageComponents/Navbar';
 
 
 
 const LandingPage = () => {
     return (
         <div>
+            <Navbar />
             <header>
                 <div className='content'>
                     <h1>Fitness Helper</h1>
