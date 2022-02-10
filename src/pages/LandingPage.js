@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import ROUTES from '../app/routes';
 import '../css/landingpage.css';
 import aboutImage from '../images/about.jpg';
 import one from '../images/1.jpg';
@@ -60,12 +62,12 @@ const LandingPage = () => {
             <header>
                 <div className='content'>
                     <h1>Fitness Helper</h1>
-                    <button className='btn'>Get Started</button>
+                    <Link to={ROUTES.loginRoute()} className='btn'>Get Started</Link>
                 </div>
             </header>
 
             {/* about section */}
-            <body className='body'>
+            <div className='body'>
             <section className='about'>
                 <div className='row'>
                     <div className='image'>
@@ -75,7 +77,7 @@ const LandingPage = () => {
                         <h1> About Us</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ducimus rem, consequatur dignissimos neque nisi se</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ducimus rem, consequatur dignissimos neque nisi se</p>
-                        <button className='btn'>Learn More</button>
+                        <Link to={ROUTES.signUpRoute()} className='btn'>Learn More </Link>
                     </div>
                 </div>
             </section>
@@ -91,13 +93,13 @@ const LandingPage = () => {
                             <div className='info'>
                                 <h3> {header} </h3>
                                 <p> {text} </p>
-                                <button className='btn'> {btn} </button>
+                                <button className='btn'> <Link to={ROUTES.moreRoute()}> {btn} </Link></button>
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
-            </body>
+            </div>
         </div>
     )
 }

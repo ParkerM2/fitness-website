@@ -7,14 +7,15 @@ import {
   useRouteMatch,
 } from 'react-router-dom';
 import ROUTES from './routes';
-import { LandingPage } from '../pages/index';
+import { LandingPage, Login } from '../pages/index';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-  
+        <Route path="/more" element={<h1>hi</h1>} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
