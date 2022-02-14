@@ -4,12 +4,14 @@ import ROUTES from '../app/routes';
 import '../css/landingpage.css';
 import aboutImage from '../images/about.jpg';
 import services from '../data/services';
+import Navbar from '../components/LandingPageComponents/Navbar';
 
 
 
 const LandingPage = () => {
     return (
         <div>
+            <Navbar />
             <header>
                 <div className='content'>
                     <h1>Fitness Helper</h1>
@@ -21,7 +23,7 @@ const LandingPage = () => {
             <div className='body'>
                 <section className='about'>
                     <div className='row'>
-                        <div className='image'>
+                        <div className='image' id="about">
                             <img src={aboutImage} alt="about image" />
                         </div>
                         <div className='content'>
@@ -37,7 +39,7 @@ const LandingPage = () => {
 
                 <section className='services'>
                     <h1>Services</h1>
-                    <div className='container'>
+                    <div className='container' id="services">
                         {services.map(({ id, image, header, text, btn }) => (
                             <div key={id} className='box'>
                                 <img src={image} />
