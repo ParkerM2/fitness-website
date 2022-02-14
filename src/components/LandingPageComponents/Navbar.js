@@ -20,9 +20,9 @@ const Navbar = () => {
         <div className={colorChange ? 'nav-colored' : 'nav-transparent'} >
             <div className='wrapper'>
                 <nav>
-                    <a href='#'>Home</a>
-                    <a href='#'>Home</a>
-                    <a href='#'>Home</a>
+                    <a href='/'>Home</a>
+                    <a href='#'>About</a>
+                    <a href='#'>Sign Up</a>
                 </nav>
             </div>
         </div>
