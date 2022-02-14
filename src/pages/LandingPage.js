@@ -23,7 +23,7 @@ const LandingPage = () => {
             <div className='body'>
                 <section className='about'>
                     <div className='row'>
-                        <div className='image'>
+                        <div className='image' id="about">
                             <img src={aboutImage} alt="about image" />
                         </div>
                         <div className='content'>
@@ -39,7 +39,7 @@ const LandingPage = () => {
 
                 <section className='services'>
                     <h1>Services</h1>
-                    <div className='container'>
+                    <div className='container' id="services">
                         {services.map(({ id, image, header, text, btn }) => (
                             <div key={id} className='box'>
                                 <img src={image} />

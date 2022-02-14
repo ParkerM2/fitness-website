@@ -29,4 +29,11 @@ nav a {
     color: white;
 }
 
+.navLink:hover{
+    background-color: white;
+    color: #7FFF00;
+}
 
+#end {
+    float: right;
+}
