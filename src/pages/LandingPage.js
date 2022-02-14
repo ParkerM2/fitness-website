@@ -5,12 +5,13 @@ import '../css/landingpage.css';
 import aboutImage from '../images/about.jpg';
 import services from '../data/services';
 import Navbar from '../components/LandingPageComponents/Navbar';
+import Footer from '../components/LandingPageComponents/Footer';
 
 
 
 const LandingPage = () => {
     return (
-        <div>
+        <div id="top">
             <Navbar />
             <header>
                 <div className='content'>
@@ -52,6 +53,9 @@ const LandingPage = () => {
                         ))}
                     </div>
                 </section>
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     );
