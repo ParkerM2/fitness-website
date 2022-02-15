@@ -9,6 +9,7 @@ import {
 import ROUTES from './routes';
 import { LandingPage, Login } from '../pages/index';
 
+
 function App() {
   return (
     <Router>
