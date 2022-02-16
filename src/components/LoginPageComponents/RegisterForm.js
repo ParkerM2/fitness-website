@@ -1,9 +1,9 @@
 import React from 'react'
 
 const RegisterForm = () => {
-    
+
     return (
-        <form action="" className='form' onSubmit={handleSubmit}>
+        <form action="" className='form' onSubmit="{handleSubmit}">
             {/* Icon */}
             <img alt='icon' />
 
