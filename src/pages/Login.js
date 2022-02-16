@@ -7,18 +7,35 @@ import '../css/loginform.css';
 
 
 const Login = () => {
-  const dispatch = useDispatch();
+  const [formSelection, setFormSelection] = useState(true);
+  const [userName, setUserName] = useState('');
+  const [password, setUserPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
-  const userName = useSelector(selectUserName);
-  const userEmail = useSelector(selectUserEmail);
-
+  const changeForm = (newValue) => {
+    setFormSelection(newValue);
+  }
 
   return (
     <div className='login-wrapper'>
-      <LoginForm />
-
+      {
+        formSelection ?
+          (
+            <LoginForm
+              changeForm={changeForm}
+              formSelection={formSelection}
+            />
+          )
+          :
+          (
+            <RegisterForm
+              changeForm={changeForm}
+              formSelection={formSelection}
+            />
+          )
+      }
     </div>
-  )
+  );
 }
 
 export default Login;

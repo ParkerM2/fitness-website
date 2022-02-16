@@ -66,6 +66,7 @@
   font-size: 1rem;
   pointer-events: none;
   transition: .3s ease-out;
+  color:white;
 }
 .form .input-group input:focus + label,
 .form .input-group input:valid + label {
@@ -138,5 +139,8 @@
   margin-top: 1.5rem;
   margin-left: 6.5rem;
   text-decoration: underline;
+}
+.register-text:hover {
+  color: white;
 }
 

@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import '../../css/loginform.css';
 import dumbell from '../../images/dumbell.svg';
 
-const LoginForm = () => {
+const LoginForm = ({ changeForm, formSelection }) => {
+
+    const change = () => {
+        changeForm(!formSelection)
+    }
+
     return (
         <div className='login-wrapper'>
-            <form action="" className='form' onSubmit="handleSubmit">
+            <div className='form'>
+            <form action='' onSubmit="handleSubmit">
                 {/* Icon */}
                 <img className='icon' src={dumbell} alt='icon' />
 
@@ -38,13 +44,11 @@ const LoginForm = () => {
                         </div>
                     </button>
                 </div>
-
-
-                <button className='register-text'>
+            </form>
+                <button className='register-text' onClick={change}>
                     Register here
                 </button>
-
-            </form>
+            </div>
         </div>
     );
 }
