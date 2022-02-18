@@ -54,7 +54,7 @@ const RegisterForm = ({ changeForm, formSelection }) => {
                     <input type='submit' value='Register' className='submit-btn' />
                 </form>
                 <button className='register-text' onClick={change}>
-                    Back To Login
+                    Login
                 </button>
             </div>
         </div>

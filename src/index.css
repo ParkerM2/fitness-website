@@ -8,6 +8,9 @@
     transition: all 0.3s linear;
     outline: none;
 }
+html {
+    max-width: 100%;
+}
 *::selection{
     background-color: yellowgreen;
     color: #fff;

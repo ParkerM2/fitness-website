@@ -4,20 +4,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setActiveUser, setUserLogOutState, selectUserEmail, selectUserName } from '../features/userSlice';
 import { LoginForm, RegisterForm } from './../components/LoginPageComponents';
 import '../css/loginform.css';
-
+import Navbar from './../components/LandingPageComponents/Navbar';
+import '../components/LandingPageComponents/Navbar.css';
 
 const Login = () => {
   const [formSelection, setFormSelection] = useState(true);
-  const [userName, setUserName] = useState('');
-  const [password, setUserPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
 
   const changeForm = (newValue) => {
     setFormSelection(newValue);
-  }
+  };
+
 
   return (
-    <div className='login-wrapper'>
+    <div className='page'>
+      <Navbar />
+      <div className='loginPageHeader'>
+      </div>
       {
         formSelection ?
           (
@@ -34,7 +36,7 @@ const Login = () => {
             />
           )
       }
-    </div>
+      </div>
   );
 }
 
