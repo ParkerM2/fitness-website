@@ -3,16 +3,19 @@ import './Navbar.css';
 
 
 
-const Navbar = () => {
+const Navbar = ( ) => {
     const [colorChange, setColorChange] = useState(false);
+    const currentURL = window.location.href;
+    console.log(currentURL.slice(-6));
+
     
     const changeNavbarColor = () => {
-    if (window.scrollY > 300) {
-        setColorChange(true)
-    } else {
-        setColorChange(false)
-    }
-    }
+        if (window.scrollY > 300) {
+            setColorChange(true)
+        } else {
+            setColorChange(false);
+        }
+    };
 
     window.addEventListener('scroll', changeNavbarColor);
 

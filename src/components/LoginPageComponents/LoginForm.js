@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import '../../css/loginform.css';
-import dumbell from '../../images/dumbell.svg';
+import dumbell from '../../images/weight.svg';
 
 const LoginForm = ({ changeForm, formSelection }) => {
     const [userName, setUserName] = useState('');
@@ -53,7 +53,7 @@ const LoginForm = ({ changeForm, formSelection }) => {
 
                 {/* Register Here -> to registration form */}
                 <button className='register-text' onClick={change}>
-                    Register here
+                    Register
                 </button>
             </div>
         </div>
