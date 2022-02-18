@@ -31,7 +31,7 @@ const LandingPage = () => {
                             <h1> About Us</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ducimus rem, consequatur dignissimos neque nisi se</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ducimus rem, consequatur dignissimos neque nisi se</p>
-                            <Link to={ROUTES.signUpRoute()} className='btn'>Learn More </Link>
+                            <Link to={ROUTES.loginRoute()} className='btn'>Learn More </Link>
                         </div>
                     </div>
                 </section>

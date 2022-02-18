@@ -2,10 +2,12 @@ import React from 'react'
 import '../../css/loginform.css';
 import dumbell from '../../images/dumbell.svg';
 
-const RegisterForm = ({changeForm, formSelection}) => {
+const RegisterForm = ({ changeForm, formSelection }) => {
+    
     const change = () => {
         changeForm(!formSelection)
     }
+
     return (
         <div className='login-wrapper'>
             <div className='form'>
@@ -18,25 +20,25 @@ const RegisterForm = ({changeForm, formSelection}) => {
 
                     {/* User name */}
                     <div className='input-group'>
-                        <input type='text' name='userName' id='userName' required />
+                        <input type='text' name='userName' autoComplete='user name' id='userName' required />
                         <label htmlFor='userName'>User Name</label>
                     </div>
                     
                     {/* Email */}
                     <div className='input-group'>
-                        <input type='text' name='Email' id='Email' required />
+                        <input type='text' name='Email' autoComplete='email' id='Email' required />
                         <label htmlFor='Email'>Email Address</label>
                     </div>
 
                     {/* Password */}
                     <div className='input-group'>
-                        <input type='password' name='password' id='password' required />
+                        <input type='password' autoComplete='new-password' name='password' id='password' required />
                         <label htmlFor='password'>Password</label>
                     </div>
           
                     {/* Confirm Password */}
                     <div className='input-group'>
-                        <input type='password' name='confirmPassword' id='confirmPassword' required />
+                        <input type='password' autoComplete='new-password' name='confirmPassword' id='confirmPassword' required />
                         <label htmlFor='confirmPassword'>Confirm Password</label>
                     </div>
                     {/* google sign in btn */}
